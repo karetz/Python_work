@@ -4,13 +4,7 @@
 # Curse: Python 
 
 """
-txt=open('C:\\Users\\sadek\\OneDrive\\Desktop\\phyton\\New folder\\tirgul2.txt', 'r+')
-line=[]
+freq = [1, 2, 2, 5, 1, 4, 2, 5, 1, 2, 0, 1]
 
-x = txt.readline()
-
-for i in x:
-    if "Python" in x:
-        line.append(x)
-    print(line)
-txt.close()
+index=[x for x,v in enumerate(freq) if v == max(freq)]
+print(index)
